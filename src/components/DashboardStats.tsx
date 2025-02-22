@@ -1,43 +1,38 @@
 
-import { Database, File } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const DashboardStats = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div className="bg-white p-6 rounded-lg border border-gray-100 shadow-sm">
-        <div className="flex items-center gap-4">
-          <div className="p-3 bg-primary/10 rounded-lg">
-            <Database className="h-6 w-6 text-primary" />
-          </div>
-          <div>
-            <div className="text-sm font-medium text-gray-500">Space left</div>
-            <div className="flex items-center gap-2">
-              <span className="text-2xl font-semibold">516</span>
-              <span className="text-sm text-gray-500">MB</span>
-            </div>
-            <div className="flex items-center gap-1 text-sm text-green-600">
-              <span className="text-green-600">↑</span>
-              50% left
-            </div>
-          </div>
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div className="bg-gradient-to-br from-primary/5 to-primary/10 p-6 rounded-lg border border-primary/10 shadow-sm hover:shadow-md transition-shadow">
+        <div className="text-sm font-medium text-gray-600">Today's Uploads</div>
+        <div className="mt-2 flex items-baseline gap-2">
+          <span className="text-3xl font-bold text-primary">24</span>
+          <span className="text-sm text-green-600">+12%</span>
         </div>
       </div>
 
-      <div className="bg-white p-6 rounded-lg border border-gray-100 shadow-sm">
-        <div className="flex items-center gap-4">
-          <div className="p-3 bg-primary/10 rounded-lg">
-            <File className="h-6 w-6 text-primary" />
-          </div>
-          <div>
-            <div className="text-sm font-medium text-gray-500">Files</div>
-            <div className="flex items-center gap-2">
-              <span className="text-2xl font-semibold">1,893</span>
-            </div>
-            <div className="flex items-center gap-1 text-sm text-rose-600">
-              <span className="text-rose-600">↑</span>
-              1% this month
-            </div>
-          </div>
+      <div className="bg-gradient-to-br from-purple-500/5 to-purple-500/10 p-6 rounded-lg border border-purple-500/10 shadow-sm hover:shadow-md transition-shadow">
+        <div className="text-sm font-medium text-gray-600">Recent Downloads</div>
+        <div className="mt-2 flex items-baseline gap-2">
+          <span className="text-3xl font-bold text-purple-600">156</span>
+          <span className="text-sm text-green-600">+8%</span>
+        </div>
+      </div>
+
+      <div className="bg-gradient-to-br from-blue-500/5 to-blue-500/10 p-6 rounded-lg border border-blue-500/10 shadow-sm hover:shadow-md transition-shadow">
+        <div className="text-sm font-medium text-gray-600">Active Users</div>
+        <div className="mt-2 flex items-baseline gap-2">
+          <span className="text-3xl font-bold text-blue-600">892</span>
+          <span className="text-sm text-green-600">+15%</span>
+        </div>
+      </div>
+
+      <div className="bg-gradient-to-br from-rose-500/5 to-rose-500/10 p-6 rounded-lg border border-rose-500/10 shadow-sm hover:shadow-md transition-shadow">
+        <div className="text-sm font-medium text-gray-600">Total Notes</div>
+        <div className="mt-2 flex items-baseline gap-2">
+          <span className="text-3xl font-bold text-rose-600">1,893</span>
+          <span className="text-sm text-rose-600">+1%</span>
         </div>
       </div>
     </div>

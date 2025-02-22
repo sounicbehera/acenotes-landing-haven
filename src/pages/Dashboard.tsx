@@ -12,14 +12,19 @@ const Dashboard = () => {
       <main className="flex-1 p-8">
         <div className="max-w-7xl mx-auto space-y-8">
           <div className="flex justify-between items-center">
-            <h1 className="text-2xl font-semibold flex items-center gap-2">
-              👋 Hello User
-            </h1>
+            <div className="space-y-1">
+              <h1 className="text-2xl font-semibold flex items-center gap-2">
+                👋 Welcome back, User
+              </h1>
+              <p className="text-sm text-gray-500">
+                Here's what's happening with your notes today.
+              </p>
+            </div>
             <div className="relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
               <Input
                 type="search"
-                placeholder="Search"
+                placeholder="Search notes..."
                 className="pl-10 w-[300px]"
               />
             </div>
